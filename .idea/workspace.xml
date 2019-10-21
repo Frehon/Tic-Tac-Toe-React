@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ddabde3a-3964-4dc2-88a7-01a1252ad5ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/Board.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Board.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/Board.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Board.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Square/Square.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Square/Square.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Square/Square.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Square/Square.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,19 +14,38 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SNYEXiuBUjgRi9jTZZPFHe5R5h" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tgogolewski\IdeaProjects\tic-tac-toe\src\components\Square" />
+      <recent name="C:\Users\tgogolewski\IdeaProjects\tic-tac-toe\src\components\Board" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -64,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571405408321</updated>
       <workItem from="1571405412525" duration="1281000" />
-      <workItem from="1571639322757" duration="524000" />
+      <workItem from="1571639322757" duration="17264000" />
     </task>
     <servers />
   </component>
@@ -83,5 +104,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

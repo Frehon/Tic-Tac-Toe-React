@@ -1,0 +1,14 @@
+.status {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.board {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row {
+    flex-direction: row;
+}

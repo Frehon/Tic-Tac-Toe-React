@@ -1,0 +1,6 @@
+.square {
+    display: table;
+    width: 150px;
+    height: 150px;
+    font-size: 50px;
+}
