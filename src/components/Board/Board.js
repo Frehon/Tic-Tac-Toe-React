@@ -9,6 +9,8 @@ export class Board extends React.Component {
         this.state = {
             squares: Array(9).fill(null),
             xIsNext: true,
+            status: '',
+            gameOver: false
         };
     }
 
@@ -17,22 +19,39 @@ export class Board extends React.Component {
     }
 
     handleClick(i) {
-        if (!this.state.gameEnd) {
+        this.performMove(i);
+    }
+
+    performMove(i) {
+        if (!this.state.gameOver) {
             const squares = this.state.squares.slice();
 
             if (this.state.squares[i] === null) {
+
                 squares[i] = this.state.xIsNext ? 'X' : 'O';
-                this.setState({squares: squares, xIsNext: !this.state.xIsNext});
+                this.setState({squares: squares});
+                this.checkTurn(squares);
             }
         }
     }
 
-    setStatus() {
-        let winner = this.calculateWinner(this.state.squares);
+    checkTurn(squares) {
+        let winner = this.calculateWinner(squares);
+
         if (winner) {
-            return 'The winner is: ' + (winner);
+            this.setState({gameOver: true, status: 'The winner is: ' + (winner)});
+
+        } else {
+            this.setState({
+                squares: squares,
+                xIsNext: !this.state.xIsNext,
+                status: 'The next turn for: ' + (this.state.xIsNext ? 'O' : 'X')
+            });
         }
-        return 'Next turn for: ' + (this.state.xIsNext ? 'X' : 'O');
+    }
+
+    getStatus() {
+        return this.state.status;
     }
 
     calculateWinner(squares) {
@@ -57,7 +76,7 @@ export class Board extends React.Component {
 
     render() {
         return <div>
-            <div className="status">{this.setStatus()}</div>
+            <div className="status">{this.getStatus()}</div>
             <div className="board">
                 <div className="row">
                     {this.renderSquare(0)}
